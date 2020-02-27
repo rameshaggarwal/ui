@@ -87,14 +87,14 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
       version: pkg.version,
-      appName: 'Rancher',
+      appName: 'DeltaDevOps',
       environment: environment,
       baseAssets: '/',
 
       clusterToken: '%CLUSTERID%',
       projectToken: '%PROJECTID%',
 
-      apiServer: 'https://localhost:30443',
+      apiServer: 'https://localhost:443',
       apiEndpoint: '/v3',
       publicApiEndpoint: '/v3-public',
       clusterEndpoint: '/v3/clusters/%CLUSTERID%',
