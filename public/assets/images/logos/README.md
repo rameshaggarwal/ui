@@ -15,7 +15,7 @@ This folder contains all the images that have the Rancher-specific content in th
 You can replace them by running the `rancher/rancher` container with:
 
 ```-v /path/to/your/logos:/usr/share/rancher/ui/assets/images/logos```
-sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher -v /path/to/your/logos:/root/web/ui/public/assets/images/logos
+sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /root/ui/public/assets/images/logos:/usr/share/rancher/ui/assets/images/logos rancher/rancher 
 
 
 This replaces the entire folder, so you must supply all the files or they will be missing.
