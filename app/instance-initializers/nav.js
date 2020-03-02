@@ -314,6 +314,22 @@ const rootNav = [
   },
   {
     scope:          'global',
+    id:             'delta-dashboard',
+    localizedLabel: 'nav.admin.deltaDashboard',
+    route:          'global-admin.delta-dashboard',
+    resource:       ['deltadashboard'],
+    resourceScope:  'global',
+  },
+  {
+    scope:          'global',
+    id:             'delta-tasks',
+    localizedLabel: 'nav.admin.deltaTasks',
+    route:          'global-admin.delta-tasks',
+    resource:       ['deltatasks'],
+    resourceScope:  'global',
+  },
+  {
+    scope:          'global',
     id:             'global-settings',
     localizedLabel: 'nav.settings.tab',
     route:          'global-admin.settings.advanced',

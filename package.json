@@ -112,6 +112,7 @@
   },
   "dependencies": {
     "dompurify": "^1.0.11",
+    "formiojs": "^4.9.0-rc.2",
     "mysql": "^2.15.0",
     "request": "^2.83.0",
     "sendgrid": "^4.7.1",

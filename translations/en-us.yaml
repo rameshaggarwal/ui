@@ -2213,6 +2213,14 @@ multiClusterAppsPage:
   error:
     appData: Error loading global app data
 
+deltadashboardPage:
+  header: Delta Dashboard
+  noData: There is no data in delta dashboard
+
+deltaTasksPage:
+  header: Delta Tasks
+  noData: There is no data in delta tasks
+
 # If you change translations here also change the translation in app/utils/constants.js under the FALLBACK_TRANSLATIONS key
 # those are present in case we have an error in the app and can not load the translations file
 # the error page will at least make a little sense
@@ -9362,6 +9370,8 @@ nav:
     globalDnsProviders: Global DNS Providers
     globalRegistry: Global Registry
     multiClusterApps: Apps
+    deltaDashboard: Delta Dashboard
+    deltaTasks: Delta Tasks
     security:
       accounts: Users
       groupAccounts: Groups
