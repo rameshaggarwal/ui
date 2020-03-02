@@ -116,7 +116,9 @@
     "mysql": "^2.15.0",
     "request": "^2.83.0",
     "sendgrid": "^4.7.1",
-    "stripe": "^4.15.0"
+    "stripe": "^4.15.0",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0"
   },
   "resolutions": {
     "clean-css": "^4.1.11",
