@@ -2214,7 +2214,7 @@ multiClusterAppsPage:
     appData: Error loading global app data
 
 deltadashboardPage:
-  header: Delta Dashboard
+  header: Request New Delta Project
   noData: There is no data in delta dashboard
 
 deltaTasksPage:
@@ -9370,7 +9370,7 @@ nav:
     globalDnsProviders: Global DNS Providers
     globalRegistry: Global Registry
     multiClusterApps: Apps
-    deltaDashboard: Delta Dashboard
+    deltaDashboard: Dashboard
     deltaTasks: Delta Tasks
     security:
       accounts: Users

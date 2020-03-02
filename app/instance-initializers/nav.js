@@ -317,7 +317,6 @@ const rootNav = [
     id:             'delta-dashboard',
     localizedLabel: 'nav.admin.deltaDashboard',
     route:          'global-admin.delta-dashboard',
-    resource:       ['deltadashboard'],
     resourceScope:  'global',
   },
   {
@@ -325,7 +324,6 @@ const rootNav = [
     id:             'delta-tasks',
     localizedLabel: 'nav.admin.deltaTasks',
     route:          'global-admin.delta-tasks',
-    resource:       ['deltatasks'],
     resourceScope:  'global',
   },
   {

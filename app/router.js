@@ -212,6 +212,19 @@ Router.map(function() {
         });
       });
 
+      this.route('delta-dashboard', {
+        path:           '/delta-dashboard',
+        resetNamespace: true
+      }, function() {
+        this.route('index', { path: '/' });
+      });
+      this.route('delta-tasks', {
+        path:           '/delta-tasks',
+        resetNamespace: true
+      }, function() {
+        this.route('index', { path: '/' });
+      });
+
       // Resources
       this.route('security', function() {
         this.route('index', { path: '/' });
