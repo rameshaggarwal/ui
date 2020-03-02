@@ -5,7 +5,12 @@
 
 <section class="pl-0 pr-0">
   <div class="row mb-15">
-    <div>SOME</div>
-    <div id="formio"></div>
+    <label for="project">Project</label>
+    <Input @id="project" />
+    <label for="created">Created</label>
+    <Input @id="created" />
+    <label for="comments">Comments</label>
+    <Textarea  id="comments" rows="3" />
+    <button {{action "createThing"}}>Submit</button>
   </div>
 </section>
