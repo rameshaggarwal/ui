@@ -19,6 +19,12 @@ module.exports = function(app, options) {
 
   proxy.on('error', onProxyError);
 
+  proxy.on('proxyRes', function (proxyRes, req, res) {
+    proxyRes['Access-Control-Allow-Origin'] = '*'
+    proxyRes['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
+
+  })
+
   // WebSocket for Rancher
   httpServer.on('upgrade', (req, socket, head) => {
     if ( req.url.startsWith('/_lr/') ) {
@@ -84,7 +90,11 @@ module.exports = function(app, options) {
       delete req.headers['host'];
 
       proxyLog(label, req);
-      proxy.web(req, res);
+      proxy.web(req, res, {
+        changeOrigin: true,
+        //  true/false, Default: false - specify whether you want to ignore the proxy path of the incoming request 
+        ignorePath: true
+      })
     });
   });
 }
