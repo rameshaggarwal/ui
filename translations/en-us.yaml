@@ -2214,11 +2214,11 @@ multiClusterAppsPage:
     appData: Error loading global app data
 
 deltadashboardPage:
-  header: Request New Delta Project
+  header: Request New DevOps Project
   noData: There is no data in delta dashboard
 
 deltaTasksPage:
-  header: Delta Tasks
+  header: DevOps Tasks
   noData: There is no data in delta tasks
 
 # If you change translations here also change the translation in app/utils/constants.js under the FALLBACK_TRANSLATIONS key
@@ -2434,7 +2434,7 @@ k8sPage:
         Then <a href="{downloadUrl}" target="_blank">download</a> (if needed) and run <code>kubectl</code>
 
 loginPage:
-  greeting: "Howdy!<br><span>Welcome to {appName}</span>"
+  greeting: "Halo!<br><span>Welcome to {appName}</span>"
   insecure: "{appName} only works over a <code>https://</code> connection.  You must either:<br><br>Use the TLS support built-in to the server, or <br><br> Provide your own TLS termination in front of the container."
   githubMessage: "{appName} uses GitHub to manage accounts and teams.  Click the button below to log in and give us read-only access to your basic GitHub account information."
   shibbolethMessage: "{appName} uses Shibboleth to manage accounts.  Click the button below to log in to the configured Shibboleth IDP."
@@ -9371,7 +9371,7 @@ nav:
     globalRegistry: Global Registry
     multiClusterApps: Apps
     deltaDashboard: Dashboard
-    deltaTasks: Delta Tasks
+    deltaTasks: Tasks
     security:
       accounts: Users
       groupAccounts: Groups
