@@ -15,6 +15,21 @@ If you're on a Mac and use Homebrew, you can follow these steps:
   brew install node watchman yarn
 ```
 
+Build Commands:
+```
+  sudo docker run -d --restart=unless-stopped -p 90:80 -p 543:443 rancher/rancher
+
+  yarn dependencies
+
+  ./scripts/build-static -l -s -c '192.168.43.201' && cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2
+
+  Change https://192.168.43.201:543/v3/settings/ui-index to https://192.168.43.201/latest2/index.html
+
+  Change https://192.168.43.201:543/v3/settings/ui-pl to DeltaDevOps
+
+  latest2 should be availalbe on https://192.168.43.201 (maybe using nginx).
+```
+
 Setup:
 ```bash
   git clone 'https://github.com/rancher/ui'
