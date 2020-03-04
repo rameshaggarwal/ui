@@ -33,7 +33,7 @@ Build Commands:
 
   Change https://192.168.43.201:543/v3/settings/ui-pl to DeltaDevOps
 
-  latest2 should be availalbe on https://192.168.43.201 (maybe using nginx).
+  latest2 should be available on https://192.168.43.201 (maybe using nginx).
 ```
 
 Setup:
