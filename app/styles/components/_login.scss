@@ -1,9 +1,11 @@
 .login {
   background-color: $body-bg;
   color: $text-color;
-  margin: calc((100vh - 500px)/2) auto 0 auto;
+  margin-top: calc((100vh - 600px)/2);
+  height: 600px;
   padding: 40px;
-  max-width: 440px;
+  margin-left: -200px;
+  width: 700px;
   position: relative;
   text-align: center;
   box-shadow: 0 0 10px rgba($dark-grey, .25);

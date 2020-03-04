@@ -32,6 +32,7 @@ $spacing-property-map: (
 body {
   direction: ltr;
   background: url('images/logos/12.svg') center center no-repeat fixed;
+  background-size: 100%;
   &.container-farm {
     background: url('images/login-cityscape.svg') center center no-repeat fixed;
     background-size: cover;
