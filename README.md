@@ -27,13 +27,23 @@ Build Commands:
 
   replace all ip address in dist to your ip machine...
   
-  cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2         ///root/web/ui is repo's location on machine... 
+  cp -a /root/web/ui/dist/static/latest2 /usr/share/nginx/html/         ///root/web/ui is repo's location on machine... 
 
   Change https://192.168.43.201:543/v3/settings/ui-index to https://192.168.43.201/latest2/index.html
 
   Change https://192.168.43.201:543/v3/settings/ui-pl to DeltaDevOps
 
   latest2 should be available on https://192.168.43.201 (maybe using nginx).
+```
+
+Nginx Instructions:
+```
+1. Put nginx.conf in /etc/nginx/nginx.conf
+2. Generate your localhost.crt and localhost.key using openssl(IMP - place in /root/certs directory or change locations in nginx.conf):
+  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /root/certs/localhost.key -out /root/certs/localhost.crt
+
+3. Reload using:
+  nginx -s reload
 ```
 
 Setup:
