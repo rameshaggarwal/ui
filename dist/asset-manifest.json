@@ -1,0 +1,82 @@
+{
+  "bundles": {
+    "alert": {
+      "assets": [
+        {
+          "uri": "/engines-dist/alert/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/alert/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    },
+    "global-admin": {
+      "assets": []
+    },
+    "istio": {
+      "assets": [
+        {
+          "uri": "/engines-dist/istio/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/istio/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    },
+    "logging": {
+      "assets": [
+        {
+          "uri": "/engines-dist/logging/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/logging/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    },
+    "login": {
+      "assets": [
+        {
+          "uri": "/engines-dist/login/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/login/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    },
+    "monitoring": {
+      "assets": [
+        {
+          "uri": "/engines-dist/monitoring/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/monitoring/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    },
+    "nodes": {
+      "assets": []
+    },
+    "pipeline": {
+      "assets": [
+        {
+          "uri": "/engines-dist/pipeline/assets/engine-vendor.js?master-dev",
+          "type": "js"
+        },
+        {
+          "uri": "/engines-dist/pipeline/assets/engine.js?master-dev",
+          "type": "js"
+        }
+      ]
+    }
+  }
+}
