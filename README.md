@@ -21,13 +21,13 @@ Build Commands:
 
   yarn dependencies
 
-  ./scripts/build-static -l -s -c '192.168.43.201' 
+  ./scripts/build-static -l -s -c '192.168.43.201'      ///192.168.43.201 is rancher ui ip
 
             OR
 
   replace all ip address in dist to your ip machine...
   
-  cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2
+  cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2         ///root/web/ui is repo's location on machine... 
 
   Change https://192.168.43.201:543/v3/settings/ui-index to https://192.168.43.201/latest2/index.html
 
