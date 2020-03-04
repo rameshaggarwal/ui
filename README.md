@@ -21,7 +21,13 @@ Build Commands:
 
   yarn dependencies
 
-  ./scripts/build-static -l -s -c '192.168.43.201' && cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2
+  ./scripts/build-static -l -s -c '192.168.43.201' 
+
+            OR
+
+  replace all ip address in dist to your ip machine...
+  
+  cp -a /root/web/ui/dist/static/latest2/. /usr/share/nginx/html/latest2
 
   Change https://192.168.43.201:543/v3/settings/ui-index to https://192.168.43.201/latest2/index.html
 
