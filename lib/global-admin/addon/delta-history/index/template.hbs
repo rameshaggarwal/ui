@@ -1,5 +1,5 @@
 <section class="header clearfix">
-  <div class="pull-left"><h1>{{t "deltaTasksPage.header"}}</h1></div>
+  <div class="pull-left"><h1>{{t "deltaHistoryPage.header"}}</h1></div>
 
 </section>
 
@@ -11,8 +11,7 @@
             <div class="container-fluid">
               <div class="row text-left fm16 pt-3">
                 <div class="col-2">Actions</div>
-                <div class="col-3">Name</div>
-                <div class="col-3">Project</div>
+                <div class="col-4">Project</div>
                 <div class="col-4">Created</div>
               </div>
             </div>
@@ -26,34 +25,20 @@
 
 
            
-              <span className="pl-3" {{action "handleShow" task.submissionId}} data-toggle="tooltip" data-placement="bottom" title="Edit Project">
+              <span className="pl-3" {{action "handleShow" task.id}} data-toggle="tooltip" data-placement="bottom" title="Edit">
                 
                   <span class="a-special fa fa-pencil" style="fontSize:14px;cursor:pointer"/>
 
               </span>
-
-               <span className="pl-3" {{action "handleComplete" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Complete">
-             
-                    <span class="a-special fa fa-check"  style="fontSize:14px;cursor:pointer"/>
-
-                </span>
-                 <span className="pl-3" {{action "handleAssign" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Assign Task">
-             
-                    <span class="a-special fa fa-anchor"  style="fontSize:14px;cursor:pointer"/>
-
-                </span>
 
                 <span className="pl-3" {{action "handleDelete" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Delete">
              
                     <span class="a-special fa fa-trash"  style="fontSize:14px;cursor:pointer"/>
 
                 </span>
-                
 
             </div>
-            <div clsas="col-3">{{task.name}}</div>
-
-            <div class="col-3">{{task.project}}</div>
+            <div class="col-4">{{task.project}}</div>
             <div class="col-4">{{task.created}}</div>
           </div>
         </div>

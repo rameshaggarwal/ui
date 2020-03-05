@@ -25,22 +25,32 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // build time linting
     hinting:           !isProd,
+
     // reduce build time by only running tests when env is set to test
     tests:             isTest,
-    autoprefixer:      { sourcemap: false }, // Was never helpful
+
+    // Was never helpful
+    autoprefixer:      { sourcemap: false },
+
     babel:             { plugins: [require('ember-auto-import/babel-plugin')] },
-    'ember-cli-babel': { includePolyfill: isProd }, // Only include babel polyfill in prod
+
+    // Only include babel polyfill in prod
+    'ember-cli-babel': { includePolyfill: isProd },
+
     storeConfigInMeta: false,
     inlineContent:     inline,
+
     codemirror:        {
       modes:      ['yaml', 'dockerfile', 'shell', 'markdown'],
       themes:     ['monokai'],
       addonFiles: ['lint/lint.css', 'lint/lint.js', 'hint/show-hint.js', 'hint/show-hint.css', 'hint/anyword-hint.js', 'lint/yaml-lint.js']
     },
+
     sassOptions: {
       implementation: nodeSass,
       sourceMap:      !isTest,
     },
+
     outputPaths: {
       app: {
         css: {
@@ -49,6 +59,7 @@ module.exports = function(defaults) {
         }
       }
     },
+
     autoImport: {
       webpack: {
         externals: { jquery: 'jQuery' },
@@ -70,7 +81,6 @@ module.exports = function(defaults) {
       }
     },
 
-
     SRI: { enabled: false, },
 
     fingerprint: {
@@ -91,10 +101,16 @@ module.exports = function(defaults) {
       ],
       extensions: (appConfig.fingerprint === 'no' ? [] : ['js', 'css', 'png', 'jpg', 'gif', 'svg', 'map', 'woff', 'woff2', 'ttf']),
     },
+
     sourcemaps: {
       enabled:    !isTest,
       extensions: ['js']
     },
+
+    'ember-bootstrap': {
+      'bootstrapVersion': 4,
+      'importBootstrapCSS': false
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

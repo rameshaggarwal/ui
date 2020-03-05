@@ -10,7 +10,11 @@
     "ember-cli-htmlbars": "*",
     "ember-href-to": "*",
     "ember-cli-babel": "*",
-    "ember-deep-set": "*"
+    "ember-deep-set": "*",
+    "formiojs": "*",
+    "axios": "*",
+    "ember-bootstrap": "^3.1.1",
+    "bootstrap": "^4.3.1"
   },
   "ember-addon": {
     "paths": [

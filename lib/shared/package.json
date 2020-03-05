@@ -36,6 +36,7 @@
     "url-regex": "*",
     "xterm": "*",
     "yamljs": "*",
-    "dot-object": "*"
+    "dot-object": "*",
+    "axios": "*"
   }
 }

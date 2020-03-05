@@ -328,6 +328,13 @@ const rootNav = [
   },
   {
     scope:          'global',
+    id:             'delta-history',
+    localizedLabel: 'nav.admin.deltaHistory',
+    route:          'global-admin.delta-history',
+    resourceScope:  'global',
+  },
+  {
+    scope:          'global',
     id:             'global-settings',
     localizedLabel: 'nav.settings.tab',
     route:          'global-admin.settings.advanced',

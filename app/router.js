@@ -224,7 +224,12 @@ Router.map(function() {
       }, function() {
         this.route('index', { path: '/' });
       });
-
+      this.route('delta-history', {
+        path:           '/delta-history',
+        resetNamespace: true
+      }, function() {
+        this.route('index', { path: '/' });
+      });
       // Resources
       this.route('security', function() {
         this.route('index', { path: '/' });

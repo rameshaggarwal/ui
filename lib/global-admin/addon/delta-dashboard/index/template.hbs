@@ -4,13 +4,7 @@
 </section>
 
 <section class="pl-0 pr-0">
-  <div class="row mb-15">
-    <label for="project">Project</label>
-    <Input @id="project" />
-    <label for="created">Created</label>
-    <Input @id="created" />
-    <label for="comments">Comments</label>
-    <Textarea  id="comments" rows="3" />
-    <button {{action "createThing"}}>Submit</button>
+  <div class="row special-width w-100">
+    {{formio-start this.submission this.formtype }}
   </div>
 </section>

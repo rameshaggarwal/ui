@@ -2215,11 +2215,12 @@ multiClusterAppsPage:
 
 deltadashboardPage:
   header: Request New DevOps Project
-  noData: There is no data in delta dashboard
 
 deltaTasksPage:
   header: DevOps Tasks
-  noData: There is no data in delta tasks
+
+deltaHistoryPage:
+  header: DevOps History
 
 # If you change translations here also change the translation in app/utils/constants.js under the FALLBACK_TRANSLATIONS key
 # those are present in case we have an error in the app and can not load the translations file
@@ -9371,6 +9372,7 @@ nav:
     globalRegistry: Global Registry
     multiClusterApps: Apps
     deltaDashboard: Dashboard
+    deltaHistory: History
     deltaTasks: Tasks
     security:
       accounts: Users

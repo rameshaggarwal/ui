@@ -31,8 +31,7 @@ $spacing-property-map: (
 
 body {
   direction: ltr;
-  background: url('images/logos/12.svg') center center no-repeat fixed;
-  background-size: 100%;
+
   &.container-farm {
     background: url('images/login-cityscape.svg') center center no-repeat fixed;
     background-size: cover;
@@ -43,6 +42,20 @@ body {
     right: 0;
   }
 }
+
+div::after {
+  content: "";
+  background: url('images/logos/12.svg') center center no-repeat fixed;
+  background-size: 100%;
+  opacity: 0.02;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 
 /**
  * Set up a decent box model on the root element
@@ -96,4 +109,8 @@ hr {
 
 .flatpickr-months .flatpickr-month {
   height: 36px !important;
+}
+
+.formio-component {
+  width: 100%;
 }
