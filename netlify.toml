@@ -1,5 +1,8 @@
+[build]
+  base    = "scripts"
+
 [context.production]
-  command = "./scripts/build-static -l -s -c 'azadi.website'"
+  command = "build-static -l -s -c 'azadi.website'"
 
 [[redirects]]
   from = "/*"
