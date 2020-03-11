@@ -1,7 +1,10 @@
 Rancher UI
 --------
 
-Perhaps you like managing Cattle.
+Light Blue #05ACFF
+Blue #1335BB
+rgba(28, 63, 199, 0.8)
+
 
 ## Usage
 
