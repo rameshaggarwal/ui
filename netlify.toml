@@ -2,7 +2,7 @@
   base    = "scripts"
 
 [context.production]
-  command = "./build-static -l -s -c 'azadi.website'"
+  command = "./update-dependencies && ./build-static -l -s -c 'azadi.website'"
 
 [[redirects]]
   from = "/*"
