@@ -2214,7 +2214,7 @@ multiClusterAppsPage:
     appData: Error loading global app data
 
 deltadashboardPage:
-  header: Request New DevOps Project
+  header: DevOps Project
 
 deltaTasksPage:
   header: DevOps Tasks
