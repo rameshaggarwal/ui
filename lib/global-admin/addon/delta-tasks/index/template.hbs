@@ -10,10 +10,10 @@
           <li key="head" class="list-group-item mb-1 p-0" style="height:60px">
             <div class="container-fluid">
               <div class="row text-left fm16 pt-3">
-                <div class="col-2">Actions</div>
+                <div class="col-3">Actions</div>
                 <div class="col-3">Name</div>
                 <div class="col-3">Project</div>
-                <div class="col-4">Created</div>
+                <div class="col-3">Created</div>
               </div>
             </div>
           </li>
@@ -22,7 +22,7 @@
    <li class="mb-1 p-0" style="height:60px">
         <div class="container-fluid">
           <div class="row text-left fr14 pt-3">
-            <div class="col-2">
+            <div class="col-3">
 
 
            
@@ -32,7 +32,7 @@
 
               </span>
 
-               <span className="pl-3" {{action "handleComplete" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Complete">
+               <span className="pl-3" {{action "handleComplete" task.task_id}}  data-toggle="tooltip" data-placement="bottom" title="Complete">
              
                     <span class="a-special fa fa-check"  style="fontSize:14px;cursor:pointer"/>
 
@@ -51,10 +51,10 @@
                 
 
             </div>
-            <div clsas="col-3">{{task.name}}</div>
+            <div class="col-3">{{task.name}}</div>
 
             <div class="col-3">{{task.project}}</div>
-            <div class="col-4">{{task.created}}</div>
+            <div class="col-3">{{task.created}}</div>
           </div>
         </div>
       </li >
