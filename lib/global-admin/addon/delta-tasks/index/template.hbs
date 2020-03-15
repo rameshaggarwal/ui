@@ -37,7 +37,7 @@
                     <span class="a-special fa fa-check"  style="fontSize:14px;cursor:pointer"/>
 
                 </span>
-                 <span className="pl-3" {{action "handleAssign" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Assign Task">
+                 <span className="pl-3" {{action "handleAssign" task.id task.name task.task_id}}  data-toggle="tooltip" data-placement="bottom" title="Assign Task">
              
                     <span class="a-special fa fa-anchor"  style="fontSize:14px;cursor:pointer"/>
 
@@ -73,6 +73,6 @@
     </h4>
   </modal.header>
   <modal.body>
-    {{formio-start this.submission this.formtype }}
+    {{formio-start this.submission this.formtype this.task_id}}
   </modal.body>
 </BsModal>
