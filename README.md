@@ -18,7 +18,29 @@ If you're on a Mac and use Homebrew, you can follow these steps:
   brew install node watchman yarn
 ```
 
-Build Commands:
+Credentials:
+```
+server: 159.89.201.54
+password: topper@79
+
+deltadevops.app
+username: admin
+password: top
+```
+
+Run Commands(Simple):
+```
+  sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /root/certs:/etc/rancher/ssl rancher/rancher
+  (** certs command is optional - if used it must contain cert.pem, key.pem and cacerts.pem for rancher certificates in this folder **)
+
+  change https://your-domain/v3/settings/ui-index to https://azadi.website/latest2/index.html
+  change https://your-domain/v3/settings/ui-pl to DeltaDevOps
+
+```
+
+
+
+Run Commands(Full local development):
 ```
   sudo docker run -d --restart=unless-stopped -p 90:80 -p 543:443 rancher/rancher
 
@@ -49,7 +71,7 @@ Nginx Instructions:
   nginx -s reload
 ```
 
-Setup:
+Setup(dev):
 ```bash
   git clone 'https://github.com/rancher/ui'
   cd 'ui'
