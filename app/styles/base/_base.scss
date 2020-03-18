@@ -34,7 +34,7 @@ body {
 
   &.container-farm {
     background: url('images/login-cityscape.svg') center center no-repeat fixed;
-    background-size: cover;
+    background-size: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -43,6 +43,11 @@ body {
   }
 }
 
+.container-farm::before {
+  content: "";
+  background: #ffffff;
+  background-size: 100%;
+}
 
 body::before {
   content: "";
