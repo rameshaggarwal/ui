@@ -9,7 +9,7 @@
         <ul class="list-group" style="list-style-type:none;">
           <li key="head" class="list-group-item mb-1 p-0" style="height:60px">
             <div class="container-fluid">
-              <div class="row text-left fm16 pt-3">
+              <div class="row text-left fm16 pt-3" style="border: 1px solid;border-radius:5px;padding:8px;">
                 <div class="col-3">Actions</div>
                 <div class="col-3">Name</div>
                 <div class="col-3">Project</div>
@@ -26,7 +26,7 @@
 
 
            
-              <span className="pl-3" {{action "handleShow" task.submissionId task.name}} data-toggle="tooltip" data-placement="bottom" title="Edit Project">
+              <span className="pl-0" {{action "handleShow" task.submissionId task.name}} data-toggle="tooltip" data-placement="bottom" title="Edit Project">
                 
                   <span class="a-special fa fa-pencil" style="fontSize:14px;cursor:pointer"/>
 
@@ -48,7 +48,9 @@
                     <span class="a-special fa fa-trash"  style="fontSize:14px;cursor:pointer"/>
 
                 </span>
-                
+                <span className="pl-3" {{action "gotoProject" task.id}} data-toggle="tooltip" data-placement="bottom" title="Cluster Project">
+                  <span class="a special fa fa-folder" style="fontSize:14px;cursor:pointer"/>
+                </span>
 
             </div>
             <div class="col-3">{{task.name}}</div>

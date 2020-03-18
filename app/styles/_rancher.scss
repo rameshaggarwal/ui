@@ -39,6 +39,7 @@
 @import "app/styles/components/tooltip";
 @import "app/styles/components/container-shell";
 @import "app/styles/components/modals";
+@import "app/styles/components/modal";
 @import "app/styles/components/catalog-box";
 @import "app/styles/components/code";
 @import "app/styles/components/alerts";
@@ -100,4 +101,73 @@
 
 .special-width .ember-view {
   width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 100%;
+}
+
+.col-2 {
+  
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+   position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+    -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+    position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.list-group {
+  width: 100%;
+}
+
+.pl-3,
+.px-3 {
+  padding-left: 0.5rem !important;
 }
