@@ -1,6 +1,10 @@
 <section class="header clearfix">
   <div class="pull-left"><h1>{{t "deltaTasksPage.header"}}</h1></div>
 
+<div class="vertical-middle"></div>
+
+  <div class="right-buttons btn btn-sm bg-primary" {{action "newProject"}}>Add Project
+  </div>
 </section>
 
 <section>
@@ -68,7 +72,7 @@
 
 <BsModal
   @open={{showModal}}
-  @onHidden={{action (mut showModal) false}} as |modal|>
+  @onHidden={{action "hideModal"}} as |modal|>
   <modal.header>
     <h4 class="modal-title">
       DevOps Project - {{this.task_name}}

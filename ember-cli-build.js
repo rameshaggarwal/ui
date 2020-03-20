@@ -108,7 +108,7 @@ module.exports = function(defaults) {
     },
 
     'ember-bootstrap': {
-      'bootstrapVersion': 4,
+      'bootstrapVersion':   4,
       'importBootstrapCSS': false
     }
   });

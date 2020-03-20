@@ -9,7 +9,7 @@ const Router = EmberRouter.extend({
   init() {
     this._super(...arguments);
 
-    this.on('routeWillChange', ( /* transition */ ) => {
+    this.on('routeWillChange', ( /* transition */) => {
       if (get(this, 'modalService.modalVisible')) {
         get(this, 'modalService').toggleModal();
       }
@@ -210,13 +210,6 @@ Router.map(function() {
           this.route('index', { path: '/' });
           this.route('launch', { path: '/:template' });
         });
-      });
-
-      this.route('delta-dashboard', {
-        path:           '/delta-dashboard',
-        resetNamespace: true
-      }, function() {
-        this.route('index', { path: '/' });
       });
       this.route('delta-tasks', {
         path:           '/delta-tasks',

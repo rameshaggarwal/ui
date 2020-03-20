@@ -2217,10 +2217,10 @@ deltadashboardPage:
   header: DevOps Project
 
 deltaTasksPage:
-  header: DevOps Tasks
+  header: Active Projects
 
 deltaHistoryPage:
-  header: DevOps History
+  header: All Projects
 
 # If you change translations here also change the translation in app/utils/constants.js under the FALLBACK_TRANSLATIONS key
 # those are present in case we have an error in the app and can not load the translations file
@@ -9371,9 +9371,9 @@ nav:
     globalDnsProviders: Global DNS Providers
     globalRegistry: Global Registry
     multiClusterApps: Apps
-    deltaDashboard: Dashboard
-    deltaHistory: History
-    deltaTasks: Tasks
+    deltaHistory: All Projects
+    deltaTasks: Active Projects
+    delta: DevOps Projects
     security:
       accounts: Users
       groupAccounts: Groups
