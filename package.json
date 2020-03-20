@@ -115,7 +115,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dompurify": "^1.0.11",
-    "formiojs": "^4.9.0-rc.3",
+    "formiojs": "^4.9.0",
     "mysql": "^2.15.0",
     "request": "^2.83.0",
     "sendgrid": "^4.7.1",
