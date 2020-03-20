@@ -7,18 +7,18 @@
 
     <div class="container-fluid p-4 flex-grow-1" style="overflow:auto">
         <ul class="list-group" style="list-style-type:none;">
-          <li key="head" class="list-group-item mb-1 p-0" style="height:60px">
+          <li key="head" class="list-group-item mb-1 p-0" style="height:50px;border-bottom:3px solid #3497da;display:flex;">
             <div class="container-fluid">
-              <div class="row text-left fm16 pt-3" style="border: 1px solid;border-radius:5px;padding:8px;">
+              <div class="row text-left fm16 pt-3" style="">
                 <div class="col-2">Actions</div>
-                <div class="col-4">Project</div>
+                <div class="col-4">Name</div>
                 <div class="col-4">Created</div>
               </div>
             </div>
           </li>
         
   {{#each this.model as |task|}}
-   <li class="mb-1 p-0" style="height:60px">
+   <li class="mb-1 p-0" style="height:50px; border-bottom:1px solid #454545; display:flex;">
         <div class="container-fluid">
           <div class="row text-left fr14 pt-3">
             <div class="col-2">
@@ -30,15 +30,19 @@
                   <span class="a-special fa fa-pencil" style="fontSize:14px;cursor:pointer"/>
 
               </span>
+              <span className="pl-3" {{action "gotoProject" task.id}} data-toggle="tooltip" data-placement="bottom" title="Cluster Project">
+                  <span class="a special fa fa-folder" style="fontSize:14px;cursor:pointer"/>
+                </span>
+              {{#if this.isAdmin}}
 
+                
+                
                 <span className="pl-3" {{action "handleDelete" task.id}}  data-toggle="tooltip" data-placement="bottom" title="Delete">
              
                     <span class="a-special fa fa-trash"  style="fontSize:14px;cursor:pointer"/>
 
                 </span>
-                <span className="pl-3" {{action "gotoProject" task.id}} data-toggle="tooltip" data-placement="bottom" title="Cluster Project">
-                  <span class="a special fa fa-folder" style="fontSize:14px;cursor:pointer"/>
-                </span>
+                {{/if}}
 
             </div>
             <div class="col-4">{{task.project}}</div>

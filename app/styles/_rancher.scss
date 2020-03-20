@@ -72,7 +72,6 @@
 @import "app/styles/vendor/prism-theme";
 //@import "ember-bootstrap/bootstrap";
 
-@import "app/styles/vendor/formio";
 @import "app/styles/ember-basic-dropdown"; //wut???? just importing ember-basic-dropdown doesnt work
 
 // Pages
@@ -92,6 +91,9 @@
 @import "app/styles/layout/large";
 @import "app/styles/layout/medium";
 @import "app/styles/layout/small";
+
+@import "app/styles/vendor/formio";
+
 
 .a-special:hover {
   color: #05ACFF;
