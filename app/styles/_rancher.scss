@@ -476,3 +476,13 @@ a.close.disabled {
 .card {
   margin-bottom: 1.25rem;
 }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 100%;
+}
