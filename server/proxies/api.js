@@ -57,17 +57,11 @@ module.exports = function(app, options) {
     req.socket.servername = targetHost;
 
     proxyLog('WS', req);
-    console.log(socket);
-    console.log(head);
+
 
     try {
-      console.log("WSYES2");
-      console.log(req.url);
       proxy.ws(req, socket, head);
     } catch (err) {
-      console.log("WSNO2");
-      console.log(req.url);
-      console.log(err);
       proxyLog(err);
     }
   });
@@ -92,27 +86,15 @@ module.exports = function(app, options) {
 
   app.use('/', function(req, res, next) {
     if (req.method === 'options') {
-      console.log("YES4");
-      console.log(req.url);
-      console.log(res.statusCode);
-
       enableCors(req, res);
       res.writeHead(200);
       res.end();
       return;
     }
     if ((req.headers['user-agent'] || '').toLowerCase().includes('mozilla')) {
-      console.log("YES");
-      console.log(req.url);
-
-      console.log(res.statusCode);
 
       next();
     } else {
-      console.log("NO");
-      console.log(req.url);
-
-      console.log(res.statusCode);
 
       proxyLog('Root', req);
 
@@ -134,11 +116,6 @@ module.exports = function(app, options) {
       }
       // include root path in proxied request
       req.url = req.originalUrl;
-
-      console.log("YES3");
-      console.log(req.url);
-      console.log(res.statusCode);
-
       req.headers['X-Api-Host'] = req.headers['host'];
       delete req.headers['host'];
 
@@ -149,10 +126,7 @@ module.exports = function(app, options) {
 }
 
 function onProxyError(err, req, res) {
-  console.log('Proxy Error on ' + req.method + ' to', req.url, err);
-  console.log("ERR4");
-  console.log(req.url);
-  console.log(res.statusCode);
+
   var error = {
     type: 'error',
     status: 500,
